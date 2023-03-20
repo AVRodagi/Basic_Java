@@ -19,12 +19,14 @@ public class BTS {
 		System.out.println("Enter the odd value of n: ");
 		int n=sc.nextInt();
 		for(int i=0;i<n;i++) {
-			for(int j=0;j<n;j++)/* prints the alphabet D */ {
+			for(int j=0;j<n;j++)/* prints the alphabet B and T */ {
 				if(j==0||
 						(i==0&&j<n/2)||
 						(j==n/2&& i!=0 && i!=(n-1))||
-						(i==(n-1)&&j<n/2)||(i==5&&j<n/2))
-						/* prints the alphabet D */
+						(i==(n-1)&&j<n/2)||(i==5&&j<n/2)||
+						(j>n/2&&i==0)||(j==((3*n)/4)&&i>=0)
+						)
+						/* prints the alphabet B and T */
 				{
 					System.out.print("* ");
 				}
